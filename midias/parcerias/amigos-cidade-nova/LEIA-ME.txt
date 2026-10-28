@@ -1,7 +1,6 @@
-Salve as duas fotos enviadas no chat nesta pasta com os nomes:
-foto-01.jpg
-foto-02.jpg
+Vídeo exibido em Parcerias:
+WhatsApp Video 2026-10-28 at 17.39.40.mp4
 
-As fotos aparecerão automaticamente na página Parcerias.
-Para incluir vídeos, copie os arquivos MP4 para esta pasta e adicione uma entrada em visitMedia no arquivo parcerias.js.
-Ao atualizar o GitHub Pages, envie também parcerias.html, parcerias.js, style.css, index.html, quem-somos.html e a pasta midias mantendo sua estrutura.
+A página usa reprodução em loop, início automático sem som e controles para ativar o áudio ou pausar.
+O vídeo é incluído diretamente em parcerias.html. A antiga galeria parcerias.js não é mais utilizada nesta página.
+Para atualizar o GitHub Pages, envie parcerias.html, style.css e o novo vídeo nesta pasta, mantendo sua estrutura.
