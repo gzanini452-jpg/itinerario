@@ -672,3 +672,30 @@ a.about-button:hover { background: #30594a; }
 @keyframes pulse {
   50% { transform: scale(1.12); opacity: .65; }
 }
+
+/* Limita mídias e colunas ao espaço disponível, inclusive em telas estreitas. */
+img, video { max-width: 100%; }
+.partner-gallery, .partner-gallery figure, .partner-gallery button { min-width: 0; max-width: 100%; }
+.partner-gallery img, .partner-gallery video { height: auto; max-width: 100%; }
+.partner-introduction, .partner-address { overflow-wrap: anywhere; }
+.partner-gallery [hidden] { display: none; }
+
+@media (max-width: 650px) {
+  .hero > nav, .about-header > nav { flex-direction: column; align-items: flex-start; gap: 18px; }
+  nav .brand { flex-shrink: 0; }
+  nav .nav-links { width: 100%; justify-content: flex-start; gap: 10px 18px; font-size: 13px; }
+  .nav-links a { white-space: nowrap; }
+  .hero { padding: 22px 20px 40px; min-height: auto; }
+  .hero-content { margin-top: 48px; }
+  .hero h1 { font-size: clamp(34px, 9vw, 48px); line-height: 1.12; letter-spacing: -1.2px; }
+  .hero .intro { font-size: 16px; }
+  .search-row input { width: 100%; font-size: 16px; }
+  .partners-page { width: 100%; padding: 30px 16px 48px; }
+  .partner-introduction, .partner-records { padding: 22px 16px; }
+  .partner-profile h2 { font-size: 28px; }
+  .partner-gallery { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  .partner-gallery img { aspect-ratio: auto; }
+  .partner-gallery video { aspect-ratio: 16 / 9; }
+  .partner-gallery figcaption { font-size: 14px; }
+  .partner-address { padding: 16px; font-size: 15px; }
+}
