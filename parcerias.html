@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parcerias | Perto de Você</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="about-header">
+    <nav aria-label="Navegação principal"><a class="brand" href="index.html">perto<span>.</span></a><div class="nav-links"><a href="index.html">Buscar lugares</a><a class="about-button" href="parcerias.html" aria-current="page">Parcerias</a><a href="quem-somos.html">Quem Somos</a></div></nav>
+  </header>
+  <main class="partners-page">
+    <div class="about-heading">
+      <p class="eyebrow">CONEXÕES QUE TRANSFORMAM</p>
+      <h1>Parcerias</h1>
+      <p class="about-tagline">Conheça as iniciativas que visitamos e os encontros que fazem parte do nosso projeto.</p>
+    </div>
+    <article class="partner-profile">
+      <header class="partner-introduction">
+        <p class="eyebrow">ORGANIZAÇÃO VISITADA</p>
+        <h2>ONG Amigos da Cidade Nova São Miguel</h2>
+        <div class="partner-tags"><span>Comunidade</span><span>Solidariedade</span><span>Crianças e idosos</span></div>
+        <p>A <strong>ONG Amigos da Cidade Nova São Miguel</strong> é uma organização social dedicada ao bem-estar da comunidade, promovendo ações solidárias e eventos voltados especialmente para crianças e idosos.</p>
+        <p>A instituição realiza atividades de integração, lazer e convivência, além de campanhas de doação para ajudar pessoas em situação de vulnerabilidade social.</p>
+        <p>Seu principal objetivo é fortalecer os laços comunitários, incentivar a solidariedade e contribuir para uma melhor qualidade de vida da população.</p>
+        <address class="partner-address">
+          <strong>Onde fica</strong><br />
+          Rua Ida Vanussi Puntel, 302 - Cidade Nova São Miguel, São Paulo - SP, 08042-280<br />
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Ida%20Vanussi%20Puntel%2C%20302%20-%20Cidade%20Nova%20S%C3%A3o%20Miguel%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008042-280" target="_blank" rel="noopener noreferrer">Abrir localização no Google Maps ↗</a>
+        </address>
+      </header>
+      <section class="partner-records" aria-labelledby="records-title">
+        <p class="eyebrow">NOSSA VISITA</p>
+        <h2 id="records-title">Registros da parceria</h2>
+        <div class="partner-gallery" id="partner-gallery"></div>
+        <p id="gallery-status" role="status">Em breve, fotos e vídeos da nossa visita.</p>
+      </section>
+    </article>
+    <a class="about-button" href="index.html">Explorar lugares próximos →</a>
+  </main>
+  <dialog id="photo-viewer" class="photo-viewer" aria-label="Foto ampliada da visita">
+    <button type="button" id="close-photo" aria-label="Fechar foto">Fechar ×</button>
+    <img id="expanded-photo" alt="" />
+    <p id="photo-caption"></p>
+  </dialog>
+  <footer>Feito para aproximar estudantes de boas iniciativas locais.</footer>
+  <script src="parcerias.js"></script>
+</body>
+</html>
