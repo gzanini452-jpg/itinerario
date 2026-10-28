@@ -622,6 +622,7 @@ footer a {
 .partner-address strong { color: var(--ink); }
 .partner-address a { display: inline-block; margin-top: 8px; color: #285b47; font-weight: 600; text-underline-offset: 3px; }
 .partner-records { padding: clamp(24px, 5vw, 54px); background: #eef2e7; }
+.partner-video { display: block; width: 100%; max-width: 850px; height: auto; max-height: 75vh; object-fit: contain; margin: 0 auto; border-radius: 12px; background: #18342d; }
 .partner-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 26px; }
 .partner-gallery figure { margin: 0; min-width: 0; }
 .partner-gallery button { display: block; width: 100%; padding: 0; background: transparent; border: 0; border-radius: 12px; overflow: hidden; }
